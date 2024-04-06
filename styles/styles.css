@@ -1,19 +1,43 @@
+/******************************************************************************************************************************************/
 .company-name {
-    display: flex;                  /* Alinea los elementos en fila */
-    justify-content: space-between; /* Distribuye los elementos a lo largo del contenedor */
-    align-items: center;            /* Alinea los elementos verticalmente */
-    width: 100%;                    /* Ocupa todo el ancho disponible */
-    background-color: #f2f2f2;    /* Color de fondo */
-    padding: 10px;                  /* Espaciado interno */
-    font-size: 20px;                /* Tamaño de la fuente */
-    font-weight: bold;              /* Negrita */
-
-    > div {
-        align-items:center;         /* Espaciado derecho */
-        > a {
-            margin-right: 20px;     /* Espaciado derecho entre elementos del div */
-            text-decoration: none;  /* Sin subrayado */
-            color: inherit;         /* Color del texto */
-        }
-    }
+    display: flex;                                  /* Alinea los elementos en fila */
+    justify-content: space-between;                 /* Distribuye los elementos a lo largo del contenedor */
+    align-items: center;                            /* Alinea los elementos verticalmente */
+    width: 100%;                                    /* Ocupa todo el ancho disponible */
+    background-color: #f2f2f2;                    /* Color de fondo */
+    padding: 10px;                                  /* Espaciado interno */
+    font-size: 20px;                                /* Tamaño de la fuente */
+    font-weight: bold;                              /* Negrita */
 }
+
+.company-name div {
+    display: flex;                                  /* Alinea los elementos en fila */
+    align-items: center;                            /* Alinea los elementos verticalmente */
+}
+
+.company-name div a {
+    margin-right: 20px;                             /* Espaciado derecho */
+    text-decoration: none;                          /* Sin subrayado */
+    color: inherit;                                 /* Color del texto */
+}
+/******************************************************************************************************************************************/
+.content {
+    display: grid;                                  /* Hace que .content sea un contenedor de cuadrícula */
+    grid-template-columns: repeat(2, 1fr);          /* Dos columnas de igual tamaño */
+    justify-items: center;                          /* Centra los elementos horizontalmente */
+    align-items: center;                            /* Centra los elementos verticalmente */
+    gap: 10px;                                      /* Espaciado entre elementos */
+    height: 100vh;                                  /* Altura del 100% del viewport */
+}
+
+.item {
+    display: grid;                                  /* Hace que .item sea un contenedor de cuadrícula */
+    justify-items: center;                          /* Centra los elementos horizontalmente */
+    align-items: center;                            /* Centra los elementos verticalmente */
+    margin: 0 10px;                                 /* Espaciado externo */
+}
+
+.item img, .item h1 {
+    margin: 10px 0;                                 /* Espaciado externo */
+}
+/******************************************************************************************************************************************/

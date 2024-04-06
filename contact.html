@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="UTF-8">                                          <!-- Codificación de caracteres -->
+        <title>ControlLabSoft</title>                                   <!-- Título de la página -->
+        <link rel="icon" href="images/Logo.webp" type="image/webp">     <!-- Icono de la página -->
+        <link rel="stylesheet" href="styles/styles.css">                <!-- Hoja de estilos -->
+        <script src="scripts/scripts.js"></script>                      <!-- Scripts de la página -->
+    </head>
     <body>
-        <!-- Cargar el contenido de la cabecera de la página -->
-        <div id="head"></div>
-        <script>
-            fetch('headers/head.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('head').innerHTML = data;
-                });
-        </script>
         <!-- Cargar el contenido del encabezado de la página -->
         <div id="header"></div>
         <script>

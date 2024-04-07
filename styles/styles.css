@@ -56,3 +56,14 @@ header {
     gap: 10px;                                      /* Espaciado entre elementos */
     height: 100vh;                                  /* Altura del viewport */
 }
+/******************************************************************************************************************************************/
+.sobrenosotros {
+    display: contents;                              /* Hace que .about sea un contenedor de cuadrícula */
+    grid-template-columns: repeat(2, 1fr);          /* Dos columnas de igual tamaño */
+    justify-items: center;                          /* Centra los elementos horizontalmente */
+    align-items: center;                            /* Centra los elementos verticalmente */
+    gap: 10px;                                      /* Espaciado entre elementos */
+    padding: 10px;                                  /* Espaciado interno */
+    margin-top: 50%;
+
+}

@@ -48,3 +48,11 @@ header {
     margin: 10px 0;                                 /* Espaciado externo */
 }
 /******************************************************************************************************************************************/
+.formulario {
+    display: grid;                                  /* Hace que .formulario sea un contenedor de cuadrícula */
+    grid-template-columns: 1fr;                     /* Una columna de tamaño igual */
+    justify-items: center;                          /* Centra los elementos horizontalmente */
+    align-items: center;                            /* Centra los elementos verticalmente */
+    gap: 10px;                                      /* Espaciado entre elementos */
+    height: 100vh;                                  /* Altura del viewport */
+}

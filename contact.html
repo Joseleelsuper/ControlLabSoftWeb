@@ -28,9 +28,12 @@
 
                 var body = `¡Buenas, ControlLabSoft!\n\nMe llamo ${name} y quería preguntar lo siguiente: ${message}\n\nMe gustaría que me respondieseis en el siguiente correo: ${email}\n\n¡Muchas gracias!`;
 
-                window.location.href = `mailto:controllabsoft@gmail.com?subject=Consulta&body=${encodeURIComponent(body)}`;
+                /*Borrar los datos del formulario*/
+                document.querySelector('input[placeholder="Nombre y apellido, si procede."]').value = '';
+                document.querySelector('input[type="email"]').value = '';
+                document.querySelector('input[placeholder="¿Qué dudas tienes? Las resolveremos."]').value = '';
 
-                form.reset();
+                window.location.href = `mailto:controllabsoft@gmail.com?subject=Consulta&body=${encodeURIComponent(body)}`;
             }
         </script>
         <!-- formulario con imputs para contactar-->

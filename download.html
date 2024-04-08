@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head></head>
+        <meta name = "viewport" content = "width=device-width, initial-scale=1">    <!-- Escalado de la página -->    
+        <meta charset="UTF-8">                                                      <!-- Codificación de caracteres -->
+        <title>ControlLabSoft</title>                                               <!-- Título de la página -->
+        <link rel="icon" href="images/Logo.webp" type="image/webp">                 <!-- Icono de la página -->
+        <link rel="stylesheet" href="styles/download.css">                          <!-- Hoja de estilos -->
+        <link rel="stylesheet" href="styles/header.css">                            <!-- Hoja de estilos de la página -->
+        <link rel="stylesheet" href="styles/body.css">                              <!-- Hoja de estilos del pie de página -->
+    </head>
+    <body>
+        <!-- Cargar el contenido del encabezado de la página -->
+        <div id="header"></div>
+        <script>
+            fetch('headers/header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header').innerHTML = data;
+                });
+        </script>
+
+        <!-- Contenido de la página -->
+        <div class="container">
+            <h1 class="title">Descargas</h1>
+            <div class="download">
+                <a href="downloads/ControlLabSoft_Windows.zip" class="download-link" download="ControlLabSoft_Windows.zip">
+                    <img src="images/Windows.webp" alt="Icono de Windows" class="download-icon">
+                    <span class="download-text">Descargar para Windows</span>
+                </a>
+            </div>
+            <div class="download">
+                <a href="downloads/ControlLabSoft_Ubuntu.zip" class="download-link" download="ControlLabSoft_Ubuntu.zip">
+                    <img src="images/Linux.webp" alt="Icono de Linux" class="download-icon">
+                    <span class="download-text">Descargar para Linux</span>
+                </a>
+            </div>
+            <div class="download">
+                <a href="downloads/ControlLabSoft_MacOS.zip" class="download-link" download="ControlLabSoft_MacOS.zip">
+                    <img src="images/Apple.webp" alt="Icono de MacOS" class="download-icon">
+                    <span class="download-text">Descargar para MacOS</span>
+                </a>
+            </div>
+        </div>      
+    </body>
+</html>

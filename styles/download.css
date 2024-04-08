@@ -1,0 +1,45 @@
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    margin-top: 40px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.download {
+    display: block;
+    margin: 30px auto;
+}
+
+.download-link {
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    padding: 12px 24px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.download-link:hover,
+.download-link:focus {
+    background-color: #0056b3;
+}
+
+.download-icon {
+    width: 50px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.download-text {
+    vertical-align: middle;
+    font-size: 18px;
+    font-weight: bold;
+}

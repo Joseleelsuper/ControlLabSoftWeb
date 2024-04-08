@@ -5,7 +5,9 @@
         <meta charset="UTF-8">                                                      <!-- Codificación de caracteres -->
         <title>ControlLabSoft</title>                                               <!-- Título de la página -->
         <link rel="icon" href="images/Logo.webp" type="image/webp">                 <!-- Icono de la página -->
-        <link rel="stylesheet" href="styles/styles.css">                            <!-- Hoja de estilos -->
+        <link rel="stylesheet" href="styles/contact.css">                           <!-- Hoja de estilos -->
+        <link rel="stylesheet" href="styles/header.css">                            <!-- Hoja de estilos de la página -->
+        <link rel="stylesheet" href="styles/body.css">                             <!-- Hoja de estilos del pie de página -->
         <script src="scripts/scripts.js"></script>                                  <!-- Scripts de la página -->
     </head>
     <body>
@@ -18,19 +20,33 @@
                     document.getElementById('header').innerHTML = data;
                 });
         </script>
+        <!-- Script para enviar un correo electrónico con los datos del formulario -->
+        <script>
+            function sendEmail() {
+                var name = document.querySelector('input[placeholder="Nombre y apellido, si procede."]').value;
+                var email = document.querySelector('input[type="email"]').value;
+                var message = document.querySelector('input[placeholder="¿Qué dudas tienes? Las resolveremos."]').value;
 
-        <!-- Contenido de la página -->
+                var body = `¡Buenas, ControlLabSoft!\n\nMe llamo ${name} y quería preguntar lo siguiente: ${message}\n\nMe gustaría que me respondieseis en el siguiente correo: ${email}\n\n¡Muchas gracias!`;
+
+                window.location.href = `mailto:controllabsoft@gmail.com?subject=Consulta&body=${encodeURIComponent(body)}`;
+
+                form.reset();
+            }
+        </script>
         <!-- formulario con imputs para contactar-->
-        <div class="formulario">
-            <form action="mailto:controllabsoft@gmail.com" method="post" enctype="text/plain">
-                <label for="username">Nombre:</label>
-                <input type="text" id="name" name="username" placeholder="nombre" required>
-                <label for="email">Correo electrónico:</label>
-                <input type="email" id="email" name="email" required placeholder="hola@gmail.com">
-                <label for="message">Mensaje:</label>
-                <textarea id="message" name="message" required placeholder="tengo un problema con..."></textarea>
-                <input type="submit" value="Enviar">
-            </form>
-        </div>
+        <form class="formulario" onsubmit="event.preventDefault(); sendEmail();">
+            <h2>Contáctanos</h2>
+            <p type="Name:">
+                <input placeholder="Nombre y apellido, si procede." required></input>
+            </p>
+            <p type="Email:">
+                <input type="email" placeholder="Tu email para que te contactemos." required></input>
+            </p>
+            <p type="Message:">
+                <input placeholder="¿Qué dudas tienes? Las resolveremos." required></input>
+            </p>
+            <button>Enviar mensaje</button>
+        </form>
     </body>
 </html>

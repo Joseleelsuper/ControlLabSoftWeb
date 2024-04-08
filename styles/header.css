@@ -1,0 +1,28 @@
+header {
+    position: fixed;                                /* Hace que la cabecera se desplace con la página */
+    top: 0;                                         /* Posiciona la cabecera en la parte superior de la página */
+    width: 100%;                                    /* Hace que la cabecera tenga el ancho completo de la página */
+    z-index: 100;                                   /* Asegura que la cabecera esté por encima de otros elementos */
+}
+
+.company-name {
+    display: flex;                                  /* Alinea los elementos en fila */
+    justify-content: space-between;                 /* Distribuye los elementos a lo largo del contenedor */
+    align-items: center;                            /* Alinea los elementos verticalmente */
+    width: 100%;                                    /* Ocupa todo el ancho disponible */
+    background-color: #f2f2f2;                    /* Color de fondo */
+    padding: 10px;                                  /* Espaciado interno */
+    font-size: 20px;                                /* Tamaño de la fuente */
+    font-weight: bold;                              /* Negrita */
+}
+
+.company-name div {
+    display: fixed;                                  /* Alinea los elementos en fila */
+    align-items: center;                            /* Alinea los elementos verticalmente */
+}
+
+.company-name div a {
+    margin-right: 20px;                             /* Espaciado derecho */
+    text-decoration: none;                          /* Sin subrayado */
+    color: inherit;                                 /* Color del texto */
+}

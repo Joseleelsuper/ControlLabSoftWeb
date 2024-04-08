@@ -3,6 +3,8 @@
 Página web de la empresa ControlLabSoft para la práctica 3 de la asignatura 
 Fundamentos de Organización y Gestión de Empresas (FOGE) de la Universidad de Burgos ([UBU](https://www.ubu.es/))
 
+Se puede ver la página web en este [enlace](https://controllabsoft.netlify.app/)
+
 ## Bibliografía de Imágenes
 
 1. [Logo.webp](images/Logo.webp) - Imagen creada con IA, puedes ver la original [aquí](https://www.bing.com/images/create/logo-for-controllabsoft-featuring-the-initials-cls/1-65f421fa1cf445c3bfb0d178644a5593?id=%2bwR3pjTPHOyqHztkPOdMbg%3d%3d&view=detailv2&idpp=genimg&thId=OIG1.r6vRwZrsrDI6jn8yQ2ir&FORM=GCRIDP&ajaxhist=0&ajaxserp=0).

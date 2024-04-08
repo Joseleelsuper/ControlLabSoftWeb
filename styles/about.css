@@ -1,0 +1,52 @@
+/*
+    Código sacado de: https://copilot.microsoft.com/sl/hclKZmE0RhI
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.sobrenosotros {
+    margin-top: 8vh;
+    font-family: 'Roboto', sans-serif;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2em;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sobrenosotros h1, .sobrenosotros h2 {
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+.sobrenosotros p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.sobrenosotros a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.sobrenosotros a:hover {
+    text-decoration: underline;
+}
+
+.sobrenosotros ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sobrenosotros li::before {
+    content: '•';
+    color: #007bff;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.sobrenosotros li {
+    margin-bottom: 0.5em;
+}

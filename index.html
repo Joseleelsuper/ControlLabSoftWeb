@@ -19,6 +19,18 @@
                     document.getElementById('header').innerHTML = data;
                 });
         </script>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+                if (isMobile) {
+                    var instagramLink = document.querySelector('a[href="https://www.instagram.com/controllabsoft/"]');
+                    var twitterLink = document.querySelector('a[href="https://twitter.com/controllabsoft"]');
+                    if (instagramLink) instagramLink.href = "instagram://user?username=controllabsoft";
+                    if (twitterLink) twitterLink.href = "twitter://user?screen_name=controllabsoft";
+                }
+            });
+        </script>
         <!-- Contenido de la página -->
         <div class="carrousel">
             <div class="item">

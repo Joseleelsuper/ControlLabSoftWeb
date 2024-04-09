@@ -26,3 +26,10 @@ header {
     text-decoration: none;                          /* Sin subrayado */
     color: inherit;                                 /* Color del texto */
 }
+
+@media (max-width: 600px) {
+    .company-name div a {
+        margin-right: 10px; /* Reduce el margen derecho en pantallas pequeñas */
+        font-size: 16px; /* Reduce el tamaño de la fuente en pantallas pequeñas */
+    }
+}
